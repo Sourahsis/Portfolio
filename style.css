@@ -877,9 +877,3 @@ header {
     height: 90vmax;
   }
 }
-@media only screen and (max-width: 620px) {
-  /* For mobile phones: */
-  .container, .navbar,.home-content,.about-me,.contact {
-    width: 100%;
-  }
-}
