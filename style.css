@@ -116,6 +116,9 @@ header {
   color: #f0f0e6;
   font-size: 2rem;
 }
+#heading2{
+    font-size: 20px;
+  }
 #text-drop {
   position: relative;
   display: flex;
