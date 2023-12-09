@@ -33,7 +33,7 @@ header {
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 64px;
 }
@@ -55,7 +55,7 @@ header {
 }
 .button{
   position:relative;
-  display:inline-block;
+  display:block;
   margin:20px;
 }
 
@@ -396,34 +396,46 @@ header {
   visibility: visible;
   opacity: 1;
 }
-
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-    flex-direction: column;
-  }
-  .timeline ul li div div {
-    width: 80%;
-    margin: 10px;
-  }
-  .timeline ul li:nth-of-type(even) > div {
-    left: -289px;
+  .timeline {
+    ul {
+      li {
+        div {
+          width: 250px;
+          flex-direction: column;
+          div {
+            width: 80%;
+            margin: 10px;
+          }
+        }
+        &:nth-of-type(even) {
+          > div {
+            left: -289px;
+          }
+        }
+      }
+    }
   }
 }
+
 @media screen and (max-width: 600px) {
   body {
     background: #8bfff4;
   }
-
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(50vw - 70px);
-    height: fit-content;
-  }
-  .timeline ul li:nth-of-type(even) > div {
-    left: 45px;
+  .timeline {
+    ul {
+      li {
+        margin-left: 20px;
+        div {
+          width: calc(100vw - 91px);
+        }
+        &:nth-of-type(even) {
+          > div {
+            left: 45px;
+          }
+        }
+      }
+    }
   }
 }
 
