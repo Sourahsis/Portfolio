@@ -19,6 +19,8 @@ header {
   max-width: 1200px;
   width: 90%;
   margin: auto;
+  align-items:center;
+  justify-content: center;
 }
 
 /* ////........Navbar.......//// */
@@ -230,8 +232,8 @@ header {
   
   
   .about-me .about-heading {
-  position: absolute;
-  top: 0; /* Align the heading to the top of the padding */
+  position: fixed;
+  top: 0%; /* Align the heading to the top of the padding */
   left: 42%; /* Center the heading horizontally */
   transform: translateX(-50%);
   color: #25b79f;
@@ -417,7 +419,8 @@ header {
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(50vw - 70px);
+    height: fit-content;
   }
   .timeline ul li:nth-of-type(even) > div {
     left: 45px;
@@ -688,74 +691,6 @@ header {
 }
 
 /* ////......Media query......//// */
-
-@media (max-width: 500px) {
-  AI {
-    font-size: 60%;
-  }
-
-  .about-content .left-content {
-    flex-basis: 100%;
-    text-align: center;
-  }
-
-  .about-content .right-content {
-    flex-basis: 100%;
-  }
-
-  .skills {
-    width: 100%;
-  }
-
-  .skills-bar .bar .progress-line {
-    width: 100%;
-  }
-
-  .work-arrow {
-    display: none;
-  }
-
-  .right-content h1 {
-    margin-top: 3.2rem;
-  }
-
-  .proj-1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-1 img {
-    height: 230px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .proj-2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .proj-2 img {
-    height: 250px;
-    width: 290px;
-    margin-bottom: 0.5rem;
-  }
-
-  .work-arrow-2 a {
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #25b79f;
-    display: block;
-    text-align: center;
-  }
-
-  .contact-content {
-    width: 100%;
-  }
-}
-
 @media (min-width: 501px) and (max-width: 768px) {
   AI {
     font-size: 65%;
@@ -822,7 +757,6 @@ header {
     width: 100%;
   }
 }
-
 @media (min-width: 769px) and (max-width: 1200px) {
   AI {
     font-size: 70%;
